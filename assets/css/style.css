@@ -224,3 +224,35 @@ input[type=submit] {
 	padding: 10px 30px;
 	cursor: pointer;
 }
+/*Media Queries*/
+
+@media screen and (max-width: 980px) {
+	.mainSection {
+
+	}
+	.sidebar {
+
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.mainSection {
+
+	}
+	.sidebar {
+
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.mainSection {
+
+	}
+	.sidebar {
+
+	}
+	#mainHead {
+		position: static;
+	}
+}
