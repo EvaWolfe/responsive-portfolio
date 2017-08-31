@@ -227,31 +227,39 @@ input[type=submit] {
 /*Media Queries*/
 
 @media screen and (max-width: 980px) {
+	.container {
+	width: 100%;
+	max-width: 768px;
+	}
+		}
 	.mainSection {
-
+		max-width: 480px;
+		margin-right: 10px;
+	}
+	.mainSection img {
+		width: 100%
 	}
 	.sidebar {
-
+		max-width: 100%;
 	}
-
 }
 
 @media screen and (max-width: 768px) {
-	.mainSection {
-
-	}
-	.sidebar {
-
-	}
+	.container {
+	width: 100%;
+	max-width: 640px;
+}
+	.mainSection {}
+	.sidebar {}
 }
 
 @media screen and (max-width: 640px) {
-	.mainSection {
-
-	}
-	.sidebar {
-
-	}
+	.container {
+	width: 100%;
+	max-width: 480px;
+}
+	.mainSection {}
+	.sidebar {}
 	#mainHead {
 		position: static;
 	}
