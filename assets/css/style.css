@@ -1,4 +1,4 @@
-*{
+* {
 	box-sizing: border-box;
 }
 
@@ -17,7 +17,10 @@ body {
 	clear: both;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
 	margin-bottom: 20px;
 }
 
@@ -25,7 +28,9 @@ p:last child {
 	margin-bottom: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-weight: 700;
 	color: #4aaaa5;
@@ -38,9 +43,11 @@ h1 {
 	padding-bottom: 20px;
 }
 
-h2, h3 {
+h2,
+h3 {
 	font-size: 22px;
 }
+
 
 /*header*/
 
@@ -74,7 +81,7 @@ nav {
 	margin-top: 25px;
 }
 
-nav a{
+nav a {
 	color: #999;
 	text-decoration: none;
 	margin-left: 15px;
@@ -88,7 +95,9 @@ nav a:first-child {
 	border-left: 0 none;
 }
 
+
 /*main*/
+
 #mainContainer {
 	padding-top: 130px;
 }
@@ -111,18 +120,21 @@ nav a:first-child {
 	margin-right: 25px;
 }
 
+
 /*sidebar*/
+
 .sidebar {
 	background: #fff;
 	padding: 30px;
-	width: 100%
-	max-width: 270px;
+	width: 100% max-width: 270px;
 	float: right;
 	border: 1px solid #ddd;
 	margin-bottom: 20px;
 }
 
-h3, .sidebar, h2 {
+h3,
+.sidebar,
+h2 {
 	border-bottom: 2px solid #eee;
 	padding-bottom: 20px;
 	margin-bottom: 15px;
@@ -185,6 +197,7 @@ footer {
 	font-weight: 300;
 }
 
+
 /*contact*/
 
 #contactForm ul {
@@ -224,43 +237,74 @@ input[type=submit] {
 	padding: 10px 30px;
 	cursor: pointer;
 }
+
+
 /*Media Queries*/
 
 @media screen and (max-width: 980px) {
 	.container {
-	width: 100%;
-	max-width: 768px;
+		width: 100%;
+		max-width: 768px;
 	}
-		}
+
 	.mainSection {
-		max-width: 480px;
-		margin-right: 10px;
+		max-width: 400px;
+		width: 100%;
 	}
+
 	.mainSection img {
-		width: 100%
+	width: 100%;
+	margin-bottom: 20px;
 	}
+
 	.sidebar {
-		max-width: 100%;
+	max-width: 100%;
 	}
 }
 
 @media screen and (max-width: 768px) {
 	.container {
+		width: 100%;
+		max-width: 640px;
+	}
+
+	.mainSection {
+	margin: 0 0 0 0;
 	width: 100%;
 	max-width: 640px;
-}
-	.mainSection {}
-	.sidebar {}
-}
+	}
 
+	.mainSection img {
+		width: 50%;
+	}
+
+	.sidebar {
+		width: 100%;
+		margin: 50px 0 0 0;
+	}
+}
 @media screen and (max-width: 640px) {
 	.container {
-	width: 100%;
-	max-width: 480px;
-}
-	.mainSection {}
-	.sidebar {}
+		width: 100%;
+	}
+	#logo {
+		width: 100%;
+	}
+
+	nav {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.mainSection img {
+		width: 100%;
+	}
+
 	#mainHead {
 		position: static;
+	}
+
+	#mainContainer {
+		padding-top: 5px; 
 	}
 }
